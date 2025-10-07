@@ -1,0 +1,157 @@
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+
+   animation: gradientBG 12s ease infinite;
+  color: #333;
+}
+
+/* Card */
+.card, .weather-card {
+  border-radius: 1.5rem;
+  border: none;
+  background: rgba(255, 248, 240, 0.85); /* Warm off-white tint */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px); /* Adds soft glassy effect */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+.weather-card {
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+}
+.weather-card:hover {
+  transform: translateY(-6px);
+}
+.weather-card img, .weather-icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+/* Headings */
+h1, h2 {
+  font-weight: 700;
+ color: #006d77;
+}
+h4 {
+  color: #575549;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 0.8rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  transition: 0.2s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Specific Buttons */
+#search {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#search:hover {
+  background: linear-gradient(135deg, #ff9966, #ffcba4);
+  transform: translateY(-2px);
+}
+
+#locate {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+#locate:hover {
+  background: linear-gradient(135deg, #4ef0a1, #3fffdc);
+  transform: translateY(-2px);
+}
+
+/* Input */
+input.form-control {
+  border-radius: 0.75rem;
+  padding: 12px 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+input.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.3);
+}
+
+/* Home Button */
+.home-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+.home-btn:hover {
+  background: linear-gradient(135deg, #ff9966, #ffcba4);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #0b0c0e, #070707);
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+footer:hover {
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #ffd700;
+}
+
+footer.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+
+
